@@ -53,3 +53,12 @@ class TextSimilarity:
         print(self.statemetns, '\n')
         for word in vectors:
             print("{} -> {}".format(word, np.round(vectors[word],3)))
+
+statements = [
+            'ruled india',
+            'Chalukyas ruled Badami',
+            'So many kingdoms ruled India',
+            'Lalbagh is a botanical garden in India'
+        ]
+
+TextSimilarity.displayVectors(statements)
